@@ -343,6 +343,45 @@
                         <use href="./images/symbol-defs-squoash.svg#icon-Vector"></use>
                     </svg>
                 </button>
+                <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+                <form class="form-call-back">
+                    <label class="form-label">
+                        <input type="text" name="name" class="form-input" placeholder=" " required>
+                        <svg width="18" height="18" class="form-icon">
+                            <use href="./images/symbol-defs-squoash.svg#icon-person"></use>
+                        </svg>
+                        <span class="form-text">Имя</span>
+                    </label>
+                    <label class="form-label">
+                        <input type="number" name="number" class="form-input" placeholder=" " required>
+                        <svg width="18" height="18" class="form-icon">
+                            <use href="./images/symbol-defs-squoash.svg#icon-phone"></use>
+                        </svg>
+                        <span class="form-text">Телефон</span>
+                    </label>
+                    <label class="form-label">
+                        <input type="email" name="email" class="form-input" placeholder=" ">
+                        <svg width="18" height="18" class="form-icon">
+                            <use href="./images/symbol-defs-squoash.svg#icon-email"></use>
+                        </svg>
+                        <span class="form-text">Почта</span>
+                    </label>
+                    <label class="form-label">
+                        <span class="comment-text">Комментарий</span>
+                        <textarea type="email" name="comment" class="form-textarea" rows="5" maxlength="25"></textarea>            
+                    </label>
+                    <label class="mail-consent">
+                        <input type="checkbox" name="Mailing-Consent" class="checkbox">
+                        <svg width="16" height="15" class="icon-rectangle"> 
+                            <use href="./images/symbol-defs-squoash.svg#icon-checkbox"></use>
+                        </svg>
+                        <svg width="16" height="15" class="icon-check">
+                            <use href="./images/symbol-defs-squoash.svg#icon-check"></use>
+                        </svg>
+                        <span class="consent-text">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></span>
+                    </label>
+                </form>
+                    
             </div>
         </div>
         <!-- <section class="diablo">
@@ -406,7 +445,19 @@
                         </a>
                 </ul>
             </div>
+            <form class="spam-form">
+                <label for="" class="spam-label">
+                    Подпишитесь на рассылку
+                    <input type="email" name="email" class="spam-input" placeholder="E-mail">
+                </label>
+                <button type="submit" class="spam-button">Подписаться
+                    <svg class="icon-send" width="24" height="24">
+                        <use href="./images/symbol-defs-squoash.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </form>
         </div>
+          
     </footer>
     <script src="./js/modal.js"></script>
 </body>
