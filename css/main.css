@@ -79,8 +79,6 @@ img{
 
 .nav{
     border-bottom: 1px solid #ECECEC;
-    ;
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -264,6 +262,7 @@ img{
     padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     background-repeat: no-repeat;
+    background-size: cover; 
     background-position: 50% 50%;
     /* background-size: 200px; */
     
@@ -450,7 +449,7 @@ img{
     justify-content: space-between;
 }
 
-.clients .link  {
+.clients .link{
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -620,7 +619,7 @@ img{
 
 /* Кнопки */
 
-.hero .main-button{
+.hero .main-button, .send-button{
     border: 0;
     min-width: 200px;
     border-radius: 4px;
@@ -630,15 +629,12 @@ img{
     line-height: 1.9;
     letter-spacing: 0.06em; 
     color: #FFFFFF;
+    cursor: pointer;
     background-color: var(--accent-color);
     transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 
-.hero .main-button:hover,
-.hero .main-button:focus,
-.spam-button:hover{
-    background-color: teal;
-}
+
 
 /* Бакдроп */
 
@@ -693,7 +689,8 @@ img{
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    transition: fill var(--transition-duration) var(--transition-timing-function);
+    transition: fill var(--transition-duration) 
+    var(--transition-timing-function);
 }
 
 
@@ -737,6 +734,7 @@ img{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 11px 13px 11px 42px;
+    transition: border-color 250ms var(--transition-timing-function);
 }
 
 .form-text{
@@ -753,6 +751,10 @@ img{
     transition: transform 250ms linear;
 }
 
+.form-textarea{
+    transition: border-color 250ms;
+}
+
 .form-input:hover,
 .form-input:focus,
 .form-textarea:hover,
@@ -767,6 +769,7 @@ img{
 .form-label:focus .form-icon{
     fill: var(--accent-color);
 }
+
 
 .form-input:not(:placeholder-shown)~.form-text,
 .form-input:hover .form-text{
@@ -838,6 +841,14 @@ img{
     display: block;
 }
 
+.form-call-back .send-button{
+    display: block;
+    padding: 10px 55px 10px 56px;
+    margin: auto ;
+    margin-top: 30px;
+    transition: background-color var(--transition-duration) 
+    var(--transition-timing-function);
+}
 
 
 /* ПОРТФОЛІО */
@@ -956,6 +967,14 @@ img{
 .link:hover,
 .link:focus{
     color: var(--accent-color);
+}
+
+.hero .main-button:hover,
+.hero .main-button:focus,
+.spam-button:hover,
+.send-button:hover,
+.send-button:focus{
+    background-color: teal;
 }
 
 .button:hover,
